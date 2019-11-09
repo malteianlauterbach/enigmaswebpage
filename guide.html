@@ -1,0 +1,235 @@
+
+<!DOCTYPE HTML>  
+<html lang="en">
+
+<head>
+    <title>Enigmas WEB programming guide</title> <!-- Defines the title visible in the TAB -->
+    <meta charset="utf-8" /> <!--Defines the used charset. In this example I use UTf-8, a charset developed vby Ken Thompson. Without this selected charset, the browser would not be able to correctly show 
+	vocals like Ä/Ö/Ü-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,300italic,400,400italic%7CLato:300,300italic,400,400italic" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="guide.css">
+
+</head>
+<!-- The "Head"-block is closed.-->
+
+<body class="is-loading"> <!-- The command above "Is-loading", enables that the following content is  visible while the page is loading. -->
+        <div id="wrapper"> <!-- Opens a warpper-->
+            <div id="main">
+                <div class="inner">
+                    <header id="header"> 
+                        <ul id="buttons01" class="buttons"> <!-- We here create aa menu for navigation, with intern links and a extern link -->
+                            <li><a href="#home" class="button n01">Home</a></li>
+                            <li><a href="#html" class="button n02">Short introduction into HTML</a></li>
+                            <li><a href="#css" class="button n03">Short introduction into CSS</a></li>
+                            <li><a href="https://repl.it/talk/learn/Machine-learning-for-beginners-in-R-1Introduction-to-KNNand-Reading-data-from-a-dataset/15323" class="button n04">Introduction into Machine Learning in R</a></li>
+                        </ul>
+                    </header>
+                    <section id="home-section">
+                        <h2 id="text04" class="style1">Hello world and welcome to my webdesign in 15 minutes guide</h2> <!-- Heading 2 is created-->
+
+                        <p id="text03"><span>I am Glad you are here and ready to witness the true <em>beauty</em></span> <!-- This text is orientated with the css rule text03 -->
+                            <br />
+                            <span> of being able to code. In short, here is a summary of things</span>
+                            <br />
+                            <span> you are going to learn.</span></p>
+                        <div id="list01" class="list"> <!-- A funky list-->
+                            <ul>
+                                <li>
+                                    <p>Basics in HTML</p>
+                                </li>
+                                <li>
+                                <p>Basics in CSS</p>
+                                </li>
+                                <li>
+                                    <p>Introduction into R (Life on repl.it)</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <p id="text06"><span><mark><strong>What I can guarantee on here:</strong></mark></span> <!-- Here is the gurantee that I created all this by myself -->
+                            <br /> <span><em>All scripts have been written and tested by me.</em></span>
+                            <br /> <span><em>Every line of text was written by myself, and nobody else.</em></span></p>
+                    </section>
+                    <section id="html-section"> <!-- A new section for our html guide is built-->
+                        <h2 id="text01" class="style1">Introduction into HTML</h2> <!-- new heading h2 -->
+                        <div id="image02" class="image"><img src="assets/html.jpg" alt="The HTML-logo" /></div> <!--a html image for out guide-->
+                        <p id="text09" class="style2"><span>HTML is the language utilized for structuring and presenting content on the World Wide Web.</span>
+                            <br /> <span> It was created by the W3C and the CERN in 1992</span>
+                            <br /> <span>It is colloquially said, <em>the backbone of the internet.</em></span>
+                            <br /> <span>HTML alone does not feature animations and only basics in designs.</span>
+                            <br /> <span>But together with <em>CSS</em> and <em>JavaScript</em>, everyone can create well designed and interactive websites. </span>
+                            <br /> <span>Let&#39;s start with the very basics.</span>
+                            <br /> <span>Follow <a href="https://repl.it/@enigma_dev/basic-html?language=html">this</a> link and look at your very own first html document.</span></p>
+                        <p id="text05" class="style2"><span>That&#39;s it, your very first, own webpage!</span>
+                            <br /> <span> You have a long way to go, dear visitor, </span>
+                            <br /> <span>but this is a good start. HTMl consists of <em>starting</em> and <em>closing tags</em>.</span>
+                            <br /> <span> A <em>starting</em> tag looks like this <code>&lt;tagexample&gt;</code>and a <em>closing tag</em> looks like this <code>&lt;/tagexample&gt;</code></span>
+                            <br /> <span> A <em>tag</em> is, as we see, closed with a <code>&lt;/&gt;</code>.</span>
+                            <br /> <span>In fact, this is not how a functioning code would and should look like.</span>
+                            <br /> <span>HTML follows a certain <em>structure</em>, which looks like <a href="https://repl.it/@enigma_dev/html-2?language=html">this</a>:</span></p>
+                        <p id="text02" class="style2"><span>Thats a lot of new information we see here, so let&#39;s check our code bit-by-bit. </span>
+                            <br /> <span>In our first line </span>
+                            <br /> <span><code>&lt;!DOCTYPE html&gt;</code>, we define for our client, what our document is of type.</span>
+                            <br /> <span>In our second line, we started the document with our known starting <em>tag</em>, <code>&lt;html&gt;</code>. </span>
+                            <br /> <span>After that, we used another opening tag, which is new to us, <code>&lt;head&gt;</code>.</span>
+                            <br /> <span><em>HTML</em> is, so one could say, similar to a skeleton.</span>
+                            <br /> <span> It features <code>head</code>, <code>body</code>and <code>footer</code>.</span>
+                            <br /> <span>In the next line, we just close our <code>head</code> with a <em>closing tag</em> <code>&lt;/head&gt;</code>.</span>
+                            <br /> <span>Now we&#39;re getting even further into basic body building with html, <em>SORRY FOR THE BAD JOKE</em></span>
+                            <br /> <span>because we now create a new tag <code>&lt;body&gt;</code>, where we will finally put some content.</span>
+                            <br /> <span>HTML consists of many different header sizes, which come with a predefined size, which can also be changed. </span>
+                            <br /> <span>In this case, </span>
+                            <br /> <span>we make use of the tag </span>
+                            <br /> <span><code>&lt;h1&gt;</code>, which creates said header. </span>
+                            <br /> <span>Then follows some text of your wish,</span>
+                            <br /> <span> in this case I just used <em>hello world</em>.</span>
+                            <br /> <span> Right after that we close said header</span>
+                            <br /> <span> with our already known closing tag, <code>&lt;/h1&gt;</code></span>
+                            <br /> <span>Neat.</span>
+                            <br /> <span>We can continue this from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>.</span>
+                            <br /> <span> <a href="https://repl.it/@enigma_dev/Headings">Here is a example of that</a></span>
+                            <br /> <span>Now we get to some fun. Pictures in html!</span>
+                            <br /> <span>Everybody needs pictures, wether you are building the new Instagram (Probaply not), or you are just wanting some illustration, this is the right thing to read First of all, we need a picture.</span>
+                            <br /> <span> In this case, i just picked a dog i found on google.</span>
+                            <br /> <span> For pictures, we use the <code>img</code> tag, which is short, logically, for <em>image</em>.</span>
+                            <br /> <span>The full code may look like this. </span>
+                            <br /> <span><code>&lt;img src=&quot;img.jpg&quot;&gt;</code></span>
+                            <br /> <span>Thats simple duh! Sizing it, is as easy. Just add</span>
+                            <br /> <span><code>style=&quot;width:500px;height:600px;</code></span>
+                            <br /> <span>to set a certain size of the image. </span>
+                            <br /> <span>We are using the <code>style</code>tag here which we will meet later on again,</span>
+                            <br /> <span> in our css course.</span>
+                            <br /> <span><a href="https://repl.it/@enigma_dev/picturesinhtml">Here is another example</a></span>
+                            <br />
+                            <br /> <span>Time to learn about links, like <a href="https://www.google.com">this</a>. </span>
+                            <br /> <span>Links are also an important object in html, </span>
+                            <br /> <span>so it is important to know how to utilize them.</span>
+                            <br /> <span>For links, we use the <code>&lt;a&gt;</code> tag. A very simple example may look like <a href="https://repl.it/@enigma_dev/links-in-html">this</a></span>
+                            <br /> <span>Thats pretty easy to use, as you can see. <a href="https://www.google.com">Links are so cool</a></span>
+                            <br /> <span> <a href="https://www.google.com">We can use them all the time.</a></span>
+                            <br /> <span>Enough with being kindish. Back to work, my fellow vistor.</span>
+                            <br /> <span>Let&#39;s go over to tables.</span>
+                            <br /> <span>A HTML table is defined with the <code>&lt;table&gt;</code><em> tag.</em></span>
+                            <br /> <span>Each table row is defined with the <code>&lt;tr&gt;</code> <em>tag</em>.</span>
+                            <br /> <span> A table header is defined with the <code>&lt;th&gt;</code> <em>tag</em>.</span>
+                            <br /> <span> A table data/cell is defined with the <code>&lt;td&gt;</code><em> tag</em>.</span>
+                            <br /> <span><a href="https://repl.it/@enigma_dev/tables-in-html">Here is a example of this</a></span>
+                            <br /> <span>In fact, if you ever have to mess with tables while web programming, </span>
+                            <br /> <span>use JS. I recommend it. Faster, easier and better looking.</span>
+                            <br />
+                            <br /> <span>Now theres a important thing you will often use:</span>
+                            <br /> <span>Lists!</span>
+                            <br /> <span>Life would be nothing without lists so they say (/sarcasm)</span>
+                            <br /> <span>So, how to do lists in HTML? Easy.</span>
+                            <br /> <span>A list is created with the <code>&lt;ul&gt;</code> tag. A very simple list may have this layout: </span>
+                            <br /> <span><code> &lt;ul&gt;</span>
+                            <br /> <span> </code>`<code>&lt;li&gt;Coffee&lt;/li&gt;</code></span>
+                            <br /> <span><code>&lt;/ul&gt;</code></span>
+                            <br /> <span>Thats simple! </span>
+                            <br /> <span><code>&lt;li&gt;</code> represents a simple item of a list. </span>
+                            <br /> <span><a href="https://repl.it/@enigma_dev/list-in-html">Here</a> is a example of lists in html.</span>
+                            <br /> <span>Last, but, for sure,not least, <em>forms</em>. </span>
+                            <br /> <span>The final thing to master.</span>
+                            <br /> <span>Forms are created with, as you can probaply predict, the <code>&lt;form&gt;</code>tag.</span>
+                            <br /> <span>Of course, your search arctually wants some label, so we set that with a <code>&lt;label&gt;</code> tag. </span>
+                            <br /> <span><a href="https://repl.it/@enigma_dev/Forms-in-HTML?language=html">Here</a> is a example. </span>
+                            <br /> <span>Behind the form element actually is much complicated, </span>
+                            <br /> <span>with different methods as <em>GET</em> or <em>POST</em>. </span>
+                            <br /> <span>If you want some help </span>
+                            <br /> <span>or want to understand the tech behind it, <a href="https://www.w3schools.com/html/html_forms.asp">here</a> is help. </span>
+                            <br /> <span>In fact, our ways are now parting here. I hope you have ,with the help of this guide, </span>
+                            <br /> <span>learned the basics of coding in HTML. </span>
+                            <br /> <span>I recommend continuing to my CSS-course, </span>
+                            <br /> <span>you probaply want to knowhow to add weird colors, fonts and sizes? </span>
+                            <br /> <span>Of course you want.</span></p>
+                    </section>
+										<!-- html guide is finished here-->
+  <!--css guide is therefore started -->                  
+											<section id="css-section">
+                        <div id="image01" class="image"><img src="assets/css.png" alt="The CSS-logo" /></div> <!--a css image -->
+                        <p id="text07" class="style2"><span>Cascading Style Sheets (<em>CSS</em>) is a style sheet language used for pratically designing the web.</span>
+                            <br /> <span> It is considered a cornerstone of the web. </span>
+                            <br /> <span><em>CSS</em> was first developed in 1994 by Hakon Wium Lie.</span>
+                            <br /> <span>I expect of you that you have a basic knowledge of <em>HTML</em> (Just do my short course if not), nothing else.</span>
+                            <br />
+                            <br /> <span>Let&#39;s start!</span>
+                            <br />
+                            <br /> <span>We have three ways of using <em>CSS</em> in combination with <em>HTML</em>. First of all, we can use it inline, like <a href="https://repl.it/@enigma_dev/inline-_CSS_">this</a>.</span>
+                            <br /> <span>Thats simple! You might have been in contact with the style element if you already have experinence in <em>HTML</em>.</span>
+                            <br /> <span>Yeah, you were using <em>CSS</em> the whole time if that is the case!</span>
+                            <br /> <span>Well,what did we actually just code? We used a heading <code>tab</code> with text <em>hello world</em></span>
+                            <br /> <span> and gave it the property of <code>color</code>with a <code>style</code> <em>tag</em> and set the value to <code>blue</code>.</span>
+                            <br /> <span>The other way to include <em>CSS</em> is using the style element in the head section of the <em>HTML</em> document. </span>
+                            <br /> <span><a href="https://repl.it/@enigma_dev/_HTML_-internal-styling">This</a> is called internal styling.</span>
+                            <br /> <span>However I won&#39;t explain it that much, because internal <em>CSS</em> can make code utterly cluttered and that is what makes bad code.</span>
+                            <br />
+                            <br /> <span>Basically, In the style element, we can give the styling to our <em>HTML</em> elements by selecting the element(s) and provide styling attributes. Just like we applied the colorproperty to the <code>h1</code> element.</span>
+                            <br /> <span>The third and most recommended way to include <em>CSS</em> is using an external stylesheet. </span>
+                            <br /> <span>We create a stylesheet with a <code>.<em>CSS</em></code> extension and include its link in the <em>HTML</em> document, like <a href="https://repl.it/@enigma_dev/_HTML_-external-_CSS_">this</a>.</span>
+                            <br /> <span>This stylesheet can also be imported into other <em>HTML</em> files,</span>
+                            <br /> <span> so this is great for reusability, which makes it better for faster pages</span>
+                            <br />
+                            <br /> <span>In order to style <em>html</em> elements, we first have to select them. Let&#39;s</span>
+                            <br /> <span>and look at three different ways to select <em>HTML</em> elements.</span>
+                            <br />
+                            <br /> <span><strong>1. Element</strong></span>
+                            <br />
+                            <br /> <span>The first way to select an <code>HTML</code> element is by simply using the name, which is what we did above. </span>
+                            <br /> <span>Let’s see how it works:</span>
+                            <br /> <span><a href="https://repl.it/@enigma_dev/css-elements">How it works</a></span>
+                            <br />
+                            <br /> <span>The example above is almost self-explanatory. </span>
+                            <br /> <span>We are selecting different elements like <code>h1, p, div</code> and giving them different style attributes. </span>
+                            <br /> <span>The <code>font-size</code> controls the size of the text, <code>color</code> sets the text color,</span>
+                            <br /> <span> and <code>margin</code> adds spacing around the element.</span>
+                            <br />
+                            <br /> <span><strong>2. Class</strong></span>
+                            <br />
+                            <br /> <span>Another way of selecting <em>HTML</em> elements is by using the class attribute. </span>
+                            <br /> <span>In <em>HTML</em>, we can assign different classes to our elements. </span>
+                            <br /> <span>Each element can have multiple classes, and each class can also be applied to multiple elements as well.</span>
+                            <br />
+                            <br /> <span><a href="https://repl.it/@enigma_dev/classes-in-css">Here</a> is the code.And here is how:</span>
+                            <br />
+                            <br /> <span>In the code above, we have assigned the class of container to the <code>div</code> element. </span>
+                            <br /> <span>In the stylesheet, we select our class using <code>.className</code> format and giving it a `<code>10px margin</code>.</span>
+                            <br />
+                            <br /> <span><strong>3. ID</strong></span>
+                            <br />
+                            <br /> <span>Aswell as classes, we can also use IDs to select <em>HTML</em> elements and apply styling to them. </span>
+                            <br /> <span>The only difference between class and ID is that one ID can be assigned to only one <em>HTML </em>element.</span>
+                            <br /> <span><a href="https://repl.it/@enigma_dev/ids-in-css">Here</a> is the code again.</span>
+                            <br />
+                            <br /> <span>The example above displays how we assign an ID to the paragraph element and later use the ID </span>
+                            <br /> <span>selector in the stylesheet to select the paragraph and apply the style to it.</span>
+                            <br /> <span>Still pretty simple,yeah? Yup, thats ´cause we haven&#39;t actually done any design yet.</span>
+                            <br />
+                            <br /> <span>Lets continue to <strong>Fonts and colors</strong></span>
+                            <br /> <span>CSS has the options for literally a gigaton of different fonts and colors. We will now learn to use these! Neat!</span>
+                            <br />
+                            <br /> <span><a href="https://repl.it/@enigma_dev/colors-in-css">Here</a> is a example.</span>
+                            <br />
+                            <br /> <span>As you can see in the above example, </span>
+                            <br /> <span>we have a <code>div</code> element with the class of container. Inside this <code>div</code>, there is an <code>h1</code> tag with text.</span>
+                            <br />
+                            <br /> <span>In the stylesheet, we select the container class and set its <code>width, height, background-color, and text-align</code>.</span>
+                            <br />
+                            <br /> <span>Finally, we select the <code>.heading1</code> class — which is applied to the <code>h1</code> tag —</span>
+                            <br /> <span> and give it the attributes of <code>font-family and color.</code></span>
+                            <br />
+                            <br /> <span>You now have learned how to use fonts and colors in CSS. Congratz on that.</span>
+                            <br /> <span>I have to say something, and I already feel bad, but our ways in means of learning CSS are parting here. </span>
+                            <br /> <span>Thanks for reading.</span></p>
+                        
+                        <hr id="divider01">
+                    </section>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
+			<script src="script.js">
+    </script>
+</body>
+
+</html>
